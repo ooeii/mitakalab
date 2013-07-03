@@ -1,4 +1,12 @@
-<%= @tweets.each do |tweet| %>
-<h1><%= tweet.title %></h1>
-<p><%= tweet.content %></p>
-<% end %>
+<div style="width:80%;margin:auto;">
+  <a href="new" style="font-size:1.6em;">ツイート入力はこちら！</a>
+	<br />
+	<br />
+	<%= @tweets.each do |tweet| %>
+	<div style="border:solid 1px #ccc;margin-bottom:1em;padding:1em">
+		<h1 style="font-size:1.2em">
+			<%= tweet.title %></h1>
+		<p>
+			<%= tweet.content %></p>
+	</div>
+	<% end %></div>
